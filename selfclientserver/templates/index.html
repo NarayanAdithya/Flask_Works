@@ -26,6 +26,8 @@
 </div>
 
 <script src="{{ url_for('static',filename='/JS/index.js') }}" charset="utf-8"></script>
+
+<h2>{{comment}}</h2>
 <div class="chart" id="bargraph">
     <script>
         var graphs = {{plot | safe}};

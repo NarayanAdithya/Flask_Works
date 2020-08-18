@@ -15,15 +15,11 @@ def create_plot(x):
         new_content.append({'Task':Task,'Start':Start,'Finish':Finish})
 
     print(new_content)
-    df = pd.DataFrame([
-    dict(Task="Job A", Start='2009-01-01', Finish='2009-02-28'),
-    dict(Task="Job B", Start='2009-03-05', Finish='2009-04-15'),
-    dict(Task="Job C", Start='2009-02-20', Finish='2009-05-30')
-    ])
+    df = pd.DataFrame(new_content)
 
     fig = px.timeline(df, x_start="Start", x_end="Finish", y="Task")
     fig.update_yaxes(autorange="reversed") # otherwise tasks are listed from the bottom up
 
     graphJSON = fig.to_json()
-
+    a="Your Gantt Chart"
     return graphJSON
