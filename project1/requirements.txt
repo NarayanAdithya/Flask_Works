@@ -1,0 +1,40 @@
+alembic==1.4.2
+brotlipy==0.7.0
+certifi==2020.6.20
+cffi @ file:///D:/bld/cffi_1595805721274/work
+click==7.1.2
+dash @ file:///home/conda/feedstock_root/build_artifacts/dash_1596870105808/work
+dash-core-components @ file:///home/conda/feedstock_root/build_artifacts/dash-core-components_1596203643601/work
+dash-html-components==1.0.3
+dash-renderer @ file:///home/conda/feedstock_root/build_artifacts/dash-renderer_1596203647496/work
+dash-table @ file:///home/conda/feedstock_root/build_artifacts/dash-table_1596867885662/work
+dnspython==1.16.0
+ecdsa==0.13
+email-validator @ file:///home/conda/feedstock_root/build_artifacts/email_validator_1589962946737/work
+Flask==1.1.2
+Flask-Compress==1.5.0
+Flask-Login==0.5.0
+Flask-Migrate==2.5.3
+Flask-SocketIO==4.3.1
+Flask-SQLAlchemy==2.4.4
+Flask-WTF==0.14.3
+future==0.18.2
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1593328102638/work
+itsdangerous==1.1.0
+Jinja2==2.11.2
+Mako==1.1.3
+MarkupSafe @ file:///C:/ci/markupsafe_1594405949945/work
+plotly @ file:///home/conda/feedstock_root/build_artifacts/plotly_1594904902831/work
+pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1593275161868/work
+pycryptodome==3.9.7
+python-dateutil==2.8.1
+python-editor==1.0.4
+python-engineio==3.13.1
+python-socketio==4.6.0
+PyYAML==5.3.1
+retrying==1.3.3
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1590081179328/work
+SQLAlchemy==1.3.18
+Werkzeug==1.0.1
+wincertstore==0.2
+WTForms==2.3.1

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{%block body%}
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{
+  url_for('static', filename='jquery.js') }}">\x3C/script>')</script>
+
+  <script type=text/javascript>
+    $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    console.log($SCRIPT_ROOT)
+  </script>
+
+  <script type="text/javascript">
+
+
+  </script>
+
+  <input type="number" id='a' name="a" value="">
+  <button type="button" name="button" id='submit'>Submit</button>
+  <span id='result' >?</span>
+<script type="text/javascript">
+  $('#submit').click(function(){
+    $.getJSON($SCRIPT_ROOT+'/ajaxtrial',{
+      a:$('input[name="a"]').val()
+    },function(data){
+      $('#result').text(data.result);
+    });
+    return false;
+  });
+
+
+</script>
+{% endblock %}

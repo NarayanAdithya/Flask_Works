@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="{{ url_for('static',filename='/CSS/index.css') }}">
+
+
+
+
+
+<div id="data_container">
+  <form>
+    <table>
+      <thead>
+        <tr><th>Name</th><th>Job</th><th>Country</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+      </tbody>
+    </table>
+  </form>
+  <button id="submit_rows">Submit</button>
+  <button id="add_rows">+</button>
+</div>
+
+<script src="{{ url_for('static',filename='/JS/index.js') }}" charset="utf-8"></script>
+
+
+{% endblock %}

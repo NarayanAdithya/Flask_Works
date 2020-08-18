@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block body %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+
+<div id="data_container">
+  <form method='post'>
+    <table>
+      <thead>
+        <tr><th>Task</th><th>StartDate</th><th>EndDate</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><input name="Task01" type="text"></td><td><input name="Start02" type="date"></td><td><input name="Finish03" type="date"></td></tr>
+      </tbody>
+    </table>
+    <button type="submit" >Submit Rows</button>
+    <button type="button" id="add_rows">+</button>
+  </form>
+
+
+</div>
+
+<script src="{{ url_for('static',filename='/JS/index.js') }}" charset="utf-8"></script>
+<div class="chart" id="bargraph">
+    <script>
+        var graphs = {{plot | safe}};
+        Plotly.plot('bargraph',graphs,{});
+    </script>
+</div>
+{% endblock %}
